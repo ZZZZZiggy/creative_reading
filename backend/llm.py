@@ -15,7 +15,7 @@ def extract_text_from_html(html: str) -> str:
 
 
 def parse_marker_children(children: List[Dict], blocks: List[Dict], block_counter: List[int]):
-    """递归解析 marker 的 children 结构，提取文本块"""
+    """recursively parse marker children to blocks """
     TEXT_TYPES = {"Text", "SectionHeader", "Title", "ListItem", "Caption", "Footnote"}
 
     for child in children:
